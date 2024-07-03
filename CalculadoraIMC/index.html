@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Modelo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="./Assets/CSS/style.css" />
+</head>
+
+<body>
+  <section class="container">
+    <h1>Tabela IMC</h1>
+
+    <p>Calcule seu IMC</p>
+    <form action="/" id="formularioIMC" method="post">
+      <label for="input-peso">Peso</label>
+      <input type="number" step="0.01" id="input-peso">
+
+      <label for="input-altura">Altura</label>
+      <input type="text" step="0.01" id="input-altura">
+
+      <button type="submit">Calcular</button>
+    </form>
+
+    <div id="resultado"></div>
+
+    <div class="separador"></div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Categoria</th>
+          <th>IMC</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="abaixo-do-peso">
+          <td><i class="fas fa-exclamation-triangle"></i> Abaixo do Peso</td>
+          <td>Menos de 18.5</td>
+        </tr>
+        <tr class="peso-normal">
+          <td><i class="fas fa-check-circle"></i> Peso Normal</td>
+          <td>18.5 - 24.9</td>
+        </tr>
+        <tr class="sobrepeso">
+          <td><i class="fas fa-exclamation-circle"></i> Sobrepeso</td>
+          <td>25 - 29.9</td>
+        </tr>
+        <tr class="obesidade-grau-1">
+          <td><i class="fas fa-exclamation-circle"></i> Obesidade Grau 1</td>
+          <td>30 - 34.9</td>
+        </tr>
+        <tr class="obesidade-grau-2">
+          <td><i class="fas fa-exclamation-circle"></i> Obesidade Grau 2</td>
+          <td>35 - 39.9</td>
+        </tr>
+        <tr class="obesidade-grau-3">
+          <td><i class="fas fa-exclamation-circle"></i> Obesidade Grau 3</td>
+          <td>40 ou mais</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <script src="./Assets/JS/main.js"></script>
+</body>
+
+</html>

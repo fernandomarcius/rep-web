@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --primary-color: #37abce;
+  --primary-color-darker: #267c96;
+  --primary-color-light: #b3e0f3;
+  --background-color: #f0f4f8;
+  --text-color: #333;
+  --border-radius: 10px;
+  --below-weight-color: #ffecb3;
+  --normal-weight-color: #c8e6c9;
+  --overweight-color: #ffe0b2;
+  --obesity1-color: #ffccbc;
+  --obesity2-color: #ffab91;
+  --obesity3-color: #ff8a65;
+  --invalid-color: #f44336;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background-color);
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 50px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: var(--primary-color-darker);
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+form input {
+  font-size: 1.2em;
+  height: 45px;
+  padding: 0 15px;
+  border: 2px solid var(--primary-color-light);
+  border-radius: var(--border-radius);
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  border-color: var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  height: 45px;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+form button:active {
+  background: black;
+}
+
+.resultado-positivo {
+  padding: 15px;
+  border-radius: var(--border-radius);
+}
+
+.resultado-negativo {
+  background: var(--invalid-color);
+  padding: 15px;
+  border-radius: var(--border-radius);
+  color: #fff;
+}
+
+.abaixo-do-peso {
+  background: var(--below-weight-color);
+}
+
+.peso-normal {
+  background: var(--normal-weight-color);
+}
+
+.sobrepeso {
+  background: var(--overweight-color);
+}
+
+.obesidade-grau-1 {
+  background: var(--obesity1-color);
+}
+
+.obesidade-grau-2 {
+  background: var(--obesity2-color);
+}
+
+.obesidade-grau-3 {
+  background: var(--obesity3-color);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 1em;
+}
+
+th {
+  background-color: var(--primary-color-light);
+  color: var(--primary-color-darker);
+}
+
+.separador {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-top: 1px solid #ccc;
+}
